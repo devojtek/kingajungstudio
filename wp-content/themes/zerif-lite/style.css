@@ -972,6 +972,7 @@ a:active {
 .container-fluid>.navbar-collapse {
     margin-right: 0;
     margin-left: 0;
+    margin-top: 10px;
 }
 .site-content {
 	background: #272727;
@@ -1405,7 +1406,7 @@ object {
  **   Section: Home                  -----
 -----------------------------------------*/
 .header.header {
-	min-height: 76px;
+	min-height: 100px;
 }
 .header.header > .navbar {
 	-webkit-box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
@@ -1456,7 +1457,7 @@ object {
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
-	min-height: 75px;
+	min-height: 100px !important;
 	margin-bottom: 0;
 }
 #main-nav.fixed {
@@ -1469,8 +1470,8 @@ object {
 }
 .navbar-inverse .navbar-nav >li {
 	display: inline;
-	margin-right: 20px;
-	margin-top: 20px;
+	margin-right: 40px;
+	margin-top: 30px;
 }
 .navbar-inverse .navbar-nav>li:last-child {
 	margin-right: 0 !important;
