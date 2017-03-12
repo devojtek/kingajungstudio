@@ -151,13 +151,14 @@
 							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_dribbble).'"><i class="fa fa-dribbble" style="font-size:34px;"></i></a></li>';
 						endif;
 
-						/* homebook */
-						if( !empty($zerif_socials_homebook) ):
-							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_homebook).'"><img src="\wp-content\themes\zerif-lite\images\homebook_small1.png" style="height:36px; width:34px;" /></a></li>';
-						endif;
+						
 						/* instagram */
 						if( !empty($zerif_socials_instagram) ):
 							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_instagram).'"><i class="fa fa-instagram" style="font-size:34px;"></i></a></li>';
+						endif;
+						/* homebook */
+						if( !empty($zerif_socials_homebook) ):
+							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_homebook).'"><img src="\wp-content\themes\zerif-lite\images\homebook_small1.png" style="height:34px; width:34px;" /></a></li>';
 						endif;
 						echo '</ul>';
 					endif;	
