@@ -50,6 +50,9 @@
 		$zerif_socials_linkedin = get_theme_mod('zerif_socials_linkedin','#');
 		$zerif_socials_behance = get_theme_mod('zerif_socials_behance','#');
 		$zerif_socials_dribbble = get_theme_mod('zerif_socials_dribbble','#');
+
+		$zerif_socials_homebook = get_theme_mod('zerif_socials_homebook','http://www.homebook.pl/');
+		$zerif_socials_instagram = get_theme_mod('zerif_socials_instagram','https://www.instagram.com/');
 		
 		$zerif_accessibility = get_theme_mod('zerif_accessibility');
 		$zerif_copyright = get_theme_mod('zerif_copyright');
@@ -65,7 +68,7 @@
 		if(!empty($zerif_phone) || !empty($zerif_phone_icon)):
 			$footer_sections++;
 		endif;
-		if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || 
+		if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || !empty($zerif_socials_instagram) || !empty($zerif_socials_homebook) ||
 		!empty($zerif_copyright)):
 			$footer_sections++;
 		endif;
@@ -120,11 +123,11 @@
 		// open link in a new tab when checkbox "accessibility" is not ticked
 		$attribut_new_tab = (isset($zerif_accessibility) && ($zerif_accessibility != 1) ? ' target="_blank"' : '' );
 		
-		if( !empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || 
+		if( !empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || !empty($zerif_socials_instagram) || !empty($zerif_socials_homebook) ||
 		!empty($zerif_copyright)):
 		
 					echo '<div class="'.$footer_class.' copyright">';
-					if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble)):
+					if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || !empty($zerif_socials_instagram) || !empty($zerif_socials_homebook)):
 						echo '<ul class="social">';
 						
 						/* facebook */
@@ -146,6 +149,15 @@
 						/* dribbble */
 						if( !empty($zerif_socials_dribbble) ):
 							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_dribbble).'"><i class="fa fa-dribbble" style="font-size:34px;"></i></a></li>';
+						endif;
+
+						/* homebook */
+						if( !empty($zerif_socials_homebook) ):
+							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_homebook).'"><img src="\wp-content\themes\zerif-lite\images\homebook_small1.png" style="height:36px; width:34px;" /></a></li>';
+						endif;
+						/* instagram */
+						if( !empty($zerif_socials_instagram) ):
+							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_instagram).'"><i class="fa fa-instagram" style="font-size:34px;"></i></a></li>';
 						endif;
 						echo '</ul>';
 					endif;	
