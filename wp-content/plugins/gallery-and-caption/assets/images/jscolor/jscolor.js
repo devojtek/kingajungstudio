@@ -1,571 +1,607 @@
-des/ms-functions.php:1332
-msgid "Already Installed"
-msgstr "Zaten yüklenmiş"
-
-#: wp-includes/ms-functions.php:1237
-msgid "New User Registration: %s"
-msgstr "Yeni Kullanıcı Kaydı: %s"
-
-#: wp-includes/ms-functions.php:1222
-msgid ""
-"New User: %1$s\n"
-"Remote IP: %2$s\n"
-"\n"
-"Disable these notifications: %3$s"
-msgstr ""
-"Yeni Kullanıcı: %1$s\n"
-"Uzak IP: %2$s\n"
-"\n"
-"Bu bildirimleri devre dışı bırak: %3$s"
-
-#: wp-includes/ms-functions.php:1195
-msgid "New Site Registration: %s"
-msgstr "Yeni site kaydı: %s"
-
-#: wp-includes/ms-functions.php:1180
-msgid ""
-"New Site: %1$s\n"
-"URL: %2$s\n"
-"Remote IP: %3$s\n"
-"\n"
-"Disable these notifications: %4$s"
-msgstr ""
-"Yeni Site: %1$s\n"
-"URL: %2$s\n"
-"Uzak IP: %3$s\n"
-"\n"
-"Bu bildirimleri devre dışı bırak: %4$s"
-
-#: wp-includes/ms-functions.php:1115
-msgid "Could not create site."
-msgstr "Site oluşturulamıyor."
-
-#: wp-includes/ms-functions.php:986
-msgid "That username is already activated."
-msgstr "Bu kullanıcı adı zaten etkin."
-
-#: wp-includes/ms-functions.php:978
-msgid "Could not create user"
-msgstr "Kullanıcı oluşturulamadı"
-
-#: wp-includes/ms-functions.php:964
-msgid "The site is already active."
-msgstr "Site daha önce etkinleştirilmiş."
-
-#: wp-includes/ms-functions.php:962
-msgid "The user is already active."
-msgstr "Bu kullanıcı zaten aktif."
-
-#: wp-includes/ms-functions.php:958
-msgid "Invalid activation key."
-msgstr "Geçersiz etkinleştirme anahtarı."
-
-#: wp-includes/ms-functions.php:908
-msgid ""
-"To activate your user, please click the following link:\n"
-"\n"
-"%s\n"
-"\n"
-"After you activate, you will receive *another email* with your login."
-msgstr ""
-"Kullanıcınızı etkinleştirmek için, lütfen aşağıdaki bağlantıya tıklayın:\n"
-"\n"
-"%s\n"
-"\n"
-"Etkinleştirdikten sonra, giriş bilgilerinizi içeren *başka bir eposta* alacaksınız."
-
-#: wp-includes/ms-functions.php:842 wp-includes/ms-functions.php:927
-msgid "[%1$s] Activate %2$s"
-msgstr "[%1$s] Etkinleştir %2$s"
-
-#: wp-includes/ms-functions.php:818
-msgid ""
-"To activate your blog, please click the following link:\n"
-"\n"
-"%s\n"
-"\n"
-"After you activate, you will receive *another email* with your login.\n"
-"\n"
-"After you activate, you can visit your site here:\n"
-"\n"
-"%s"
-msgstr ""
-"Blogunuzu etkinleştirmek için, aşağıdaki bağlantıyı tıklayın:\n"
-"\n"
-"%s\n"
-"\n"
-"Etkinleştirdikten sonra, giriş bilgilerinizi içeren bir başka e-posta alacaksınız.\n"
-"\n"
-"Etkinleştirdikten sonra blogunuzu buradan ziyaret edebilirsiniz:\n"
-"\n"
-"%s"
-
-#: wp-includes/ms-functions.php:628
-msgid "That site is currently reserved but may be available in a couple days."
-msgstr "Bu site şu an için ayrılmış durumda ama bir kaç güne kalmaz müsait olur."
-
-#: wp-includes/ms-functions.php:617
-msgid "Sorry, that site is reserved!"
-msgstr "Üzgünüm, bu site özel olarak ayrılmış!"
-
-#: wp-includes/ms-functions.php:613 wp-includes/ms-functions.php:1108
-msgid "Sorry, that site already exists!"
-msgstr "Üzgünüm, bu site zaten var!"
-
-#: wp-includes/ms-functions.php:602
-msgid "Please enter a site title."
-msgstr "Lütfen bir site başlığı girin."
-
-#: wp-includes/ms-functions.php:585
-msgid "Sorry, site names must have letters too!"
-msgstr "Üzgünüm, site adları harfler de içermelidir!"
-
-#: wp-includes/ms-functions.php:581
-msgid "Sorry, you may not use that site name."
-msgstr "Üzgünüm, bu site ismini kullanamazsınız."
-
-#: wp-includes/ms-functions.php:577
-msgid "Site name must be at least 4 characters."
-msgstr "Site adı en az 4 karakter olmalıdır."
-
-#: wp-includes/ms-functions.php:574
-msgid "That name is not allowed."
-msgstr "Bu isim kullanılamaz"
-
-#: wp-includes/ms-functions.php:570
-msgid "Site names can only contain lowercase letters (a-z) and numbers."
-msgstr "Site ismi sadece küçük harfleri (a-z) ve rakamları içerebilir."
-
-#: wp-includes/ms-functions.php:567
-msgid "Please enter a site name."
-msgstr "Lütfen bir site adı girin."
-
-#: wp-includes/ms-functions.php:494
-msgid "That email address has already been used. Please check your inbox for an activation email. It will become available in a couple of days if you do nothing."
-msgstr "Bu e-posta adresi zaten kullanılıyor. Lütfen etkinleştirme postasına bakmak için gelen kutunuzu kontrol edin. Bir şey yapmazsanız, birkaç gün içinde erişilebilir olacak."
-
-#: wp-includes/ms-functions.php:484
-msgid "That username is currently reserved but may be available in a couple of days."
-msgstr "Bu kullanıcı adı şu an ayırtılmış durumda, fakat birkaç gün içinde müsait olabilir."
-
-#: wp-includes/ms-functions.php:472 wp-includes/user.php:1395
-msgid "Sorry, that email address is already used!"
-msgstr "Üzgünüz, bu e-posta adresi zaten kullanılıyor!"
-
-#: wp-includes/ms-functions.php:468 wp-includes/user.php:1321
-msgid "Sorry, that username already exists!"
-msgstr "Üzgünüz, bu kullanıcı adı zaten kullanılıyor!"
-
-#: wp-includes/ms-functions.php:462
-msgid "Sorry, that email address is not allowed!"
-msgstr "Üzgünüz, bu e-posta adresine izin verilmiyor!"
-
-#: wp-includes/ms-functions.php:456
-msgid "Please enter a valid email address."
-msgstr "Lütfen geçerli bir e-posta adresi girin."
-
-#: wp-includes/ms-functions.php:453
-msgid "Sorry, usernames must have letters too!"
-msgstr "Üzgünüz, kullanıcı adlarında harf de yer almalı!"
-
-#: wp-includes/ms-functions.php:448 wp-includes/user.php:1317
-msgid "Username may not be longer than 60 characters."
-msgstr "Kullanıcı adı 60 karakterden uzun olamaz."
-
-#: wp-includes/ms-functions.php:445
-msgid "Username must be at least 4 characters."
-msgstr "Kullanıcı adı en az 4 karakter olmalıdır."
-
-#: wp-includes/ms-functions.php:442
-msgid "You cannot use that email address to signup. We are having problems with them blocking some of our email. Please use another email provider."
-msgstr "Kayıt olmak için bu e-posta adresini kullanamazsınız. Bu posta servisi, bizim e-postalarımızın bir kısmını engellediği için sorun yaşıyoruz. Lütfen başka bir servisten aldığınız adresi kullanın."
-
-#: wp-includes/ms-functions.php:431 wp-includes/ms-functions.php:438
-#: wp-includes/user.php:1334
-msgid "Sorry, that username is not allowed."
-msgstr "Üzgünüz, bu kullanıcı adına izin verilmiyor."
-
-#: wp-includes/ms-functions.php:423
-msgid "Please enter a username."
-msgstr "Lütfen bir kullanıcı adı girin."
-
-#: wp-includes/ms-functions.php:416
-msgid "Usernames can only contain lowercase letters (a-z) and numbers."
-msgstr "Kullanıcı adları sadece küçük harfleri (a-z) ve rakamları içerebilir."
-
-#: wp-includes/ms-functions.php:242
-msgid "That user does not exist."
-msgstr "Böyle bir kullanıcı mevcut değil."
-
-#: wp-includes/ms-functions.php:160
-msgid "The requested user does not exist."
-msgstr "Böyle bir kullanıcı bulunmuyor."
-
-#: wp-includes/ms-deprecated.php:387
-msgid "<strong>ERROR</strong>: problem creating site entry."
-msgstr "<strong>HATA</strong>: site girdisi oluşturulurken hata oluştu."
-
-#: wp-includes/ms-deprecated.php:380
-msgid "<strong>ERROR</strong>: Site URL already taken."
-msgstr "<strong>HATA</strong>: Site adresi daha önce alınmış."
-
-#: wp-includes/ms-default-constants.php:134
-msgid "<strong>Conflicting values for the constants VHOST and SUBDOMAIN_INSTALL.</strong> The value of SUBDOMAIN_INSTALL will be assumed to be your subdomain configuration setting."
-msgstr "<strong>VHOST ve SUBDOMAIN_INSTALL değerleri arasında çakışma söz konusu.</strong> SUBDOMAIN_INSTALL değeri alt alan adı ayarlarınız için baz alınacaktır."
-
-#: wp-includes/ms-default-constants.php:132
-msgid "The constant <code>VHOST</code> <strong>is deprecated</strong>. Use the boolean constant <code>SUBDOMAIN_INSTALL</code> in wp-config.php to enable a subdomain configuration. Use is_subdomain_install() to check whether a subdomain configuration is enabled."
-msgstr "Sabit <code>VHOST</code> değeri <strong>geçerliliğini yitirmiştir</strong>. Bunun yerine alt alan adı ayarları için wp-config.php dosyasındaki <code>SUBDOMAIN_INSTALL</code> mantıksal sabitini kullanın. is_subdomain_install() metodunu kullanarak alt alan adı ayarlarının etkinliğini kontrol edin."
-
-#: wp-includes/media.php:3446
-msgid "Add to Video Playlist"
-msgstr "Video listesine ekle"
-
-#: wp-includes/media.php:3445
-msgid "Add to video playlist"
-msgstr "Video listesine ekle"
-
-#: wp-includes/media.php:3444
-msgid "Update video playlist"
-msgstr "Video listeini güncelle"
-
-#: wp-includes/media.php:3443
-msgid "Insert video playlist"
-msgstr "Video listesini ekle"
-
-#: wp-includes/media.php:3442
-msgid "&#8592; Cancel Video Playlist"
-msgstr "&#8592; Video listesini iptal et"
-
-#: wp-includes/media.php:3441
-msgid "Edit Video Playlist"
-msgstr "Video listesi düzenle"
-
-#: wp-includes/media.php:3440
-msgid "Create Video Playlist"
-msgstr "Video listesi oluşyur"
-
-#: wp-includes/media.php:3439
-msgid "Drag and drop to reorder videos."
-msgstr "Video sıralamasını değiştirmek için sürükle bırak."
-
-#: wp-includes/media.php:3436
-msgid "Add to Audio Playlist"
-msgstr "Ses oynatma listesine ekle"
-
-#: wp-includes/media.php:3435
-msgid "Add to audio playlist"
-msgstr "Ses oynatma listesine ekle"
-
-#: wp-includes/media.php:3434
-msgid "Update audio playlist"
-msgstr "Ses oynatma listesini güncelle"
-
-#: wp-includes/media.php:3433
-msgid "Insert audio playlist"
-msgstr "Ses oynatma listesi ekle"
-
-#: wp-includes/media.php:3432
-msgid "&#8592; Cancel Audio Playlist"
-msgstr "&#8592; Ses oynatma listesini iptal et"
-
-#: wp-includes/media.php:3431
-msgid "Edit Audio Playlist"
-msgstr "Ses oynatma listesini düzenle"
-
-#: wp-includes/media.php:3430
-msgid "Create Audio Playlist"
-msgstr "Ses listesi oluştur"
-
-#: wp-includes/media.php:3429
-msgid "Drag and drop to reorder tracks."
-msgstr "İzlerin sıralamasını değiştirmek için sürükle bırak."
-
-#: wp-includes/media.php:3426
-msgid "Add Subtitles"
-msgstr "Altyazı ekle"
-
-#: wp-includes/media.php:3425
-msgid "Select Poster Image"
-msgstr "Poster görseli seç"
-
-#: wp-includes/media.php:3423
-msgid "Add Video Source"
-msgstr "Video kaynağı ekle"
-
-#: wp-includes/media.php:3422
-msgid "Replace Video"
-msgstr "Videoyu değiştir"
-
-#: wp-includes/media.php:3421
-msgid "Video Details"
-msgstr "Video detayları"
-
-#: wp-includes/media.php:3417
-msgid "Add Audio Source"
-msgstr "Ses kaynağı ekle"
-
-#: wp-includes/media.php:3416
-msgid "Replace Audio"
-msgstr "Sesi değiştir"
-
-#: wp-includes/media.php:3415
-msgid "Audio Details"
-msgstr "Ses detayları"
-
-#: wp-includes/media.php:3412
-msgid "There has been an error cropping your image."
-msgstr "Görseli kırparken bir hata oluştu."
-
-#: wp-includes/media.php:3410
-msgid "Cropping&hellip;"
-msgstr "Kırpma&hellip;"
-
-#: wp-includes/media.php:3409
-msgid "Crop your image"
-msgstr "Görselinizi kırpın"
-
-#: wp-includes/media.php:3408
-msgid "Crop Image"
-msgstr "Görseli kırp"
-
-#: wp-includes/media.php:3407
-msgid "Skip Cropping"
-msgstr "Kırpmayı atla"
-
-#: wp-includes/media.php:3406
-msgid "Select and Crop"
-msgstr "Seç ve kırp"
-
-#: wp-includes/media.php:3401 wp-includes/media.php:3418
-#: wp-includes/media.php:3424
-msgid "Cancel Edit"
-msgstr "Düzenlemeyi iptal et"
-
-#: wp-includes/media.php:3400
-msgid "Replace Image"
-msgstr "Görseli değiştir"
-
-#: wp-includes/media.php:3399
-msgid "Image Details"
-msgstr "Görsel detayları"
-
-#: wp-includes/media.php:3396
-msgid "Reverse order"
-msgstr "Sıralamayı ters çevir"
-
-#: wp-includes/media.php:3395
-msgid "Add to Gallery"
-msgstr "Galeriye ekle"
-
-#: wp-includes/media.php:3394
-msgid "Add to gallery"
-msgstr "Galeriye ekle"
-
-#: wp-includes/media.php:3393
-msgid "Update gallery"
-msgstr "Galeriyi güncelle"
-
-#: wp-includes/media.php:3392
-msgid "Insert gallery"
-msgstr "Galeri ekle"
-
-#: wp-includes/media.php:3391
-msgid "&#8592; Cancel Gallery"
-msgstr "&#8592; Galeriyi iptal et"
-
-#: wp-includes/media.php:3390
-msgid "Edit Gallery"
-msgstr "Galeriyi Düzenle"
-
-#: wp-includes/media.php:3389
-msgid "Create Gallery"
-msgstr "Galeri oluştur"
-
-#: wp-includes/media.php:3382
-msgid "Insert from URL"
-msgstr "URL&#8217;den ekle"
-
-#: wp-includes/media.php:3376
-msgid "No media attachments found."
-msgstr "Ortam eki bulunamadı."
-
-#: wp-includes/media.php:3375
-msgid "Search Media"
-msgstr "Ortamlarda ara"
-
-#: wp-includes/media.php:3374
-msgid "Filter by type"
-msgstr "Türe göre filtrele"
-
-#: wp-includes/media.php:3373
-msgid "Filter by date"
-msgstr "Tarihe göre filtrele"
-
-#: wp-includes/media.php:3370
-msgid "Delete Selected"
-msgstr "Seçili olanları sil"
-
-#: wp-includes/media.php:3369
-msgid "Untrash Selected"
-msgstr "Çöpten geri alma seçildi"
-
-#: wp-includes/media.php:3368
-msgid "Trash Selected"
-msgstr "Çöpe taşıma seçildi."
-
-#: wp-includes/media.php:3367
-msgid "Cancel Selection"
-msgstr "Seçimden vazgeç"
-
-#: wp-includes/media.php:3366
-msgid "Bulk Select"
-msgstr "Toplu seçim"
-
-#: wp-includes/media.php:3365
-msgid ""
-"You are about to trash these items.\n"
-"  'Cancel' to stop, 'OK' to delete."
-msgstr ""
-"Bu öğeleri silmek üzeresiniz\n"
-" 'İptal' tuşuna basarak vazgeçebilir, 'Tamam' tuşu ile silebilirsiniz."
-
-#: wp-includes/media.php:3364 wp-includes/script-loader.php:82
-msgid ""
-"You are about to permanently delete these items.\n"
-"  'Cancel' to stop, 'OK' to delete."
-msgstr ""
-"Bu öğeleri kalıcı olarak silmek üzeresiniz.\n"
-" 'İptal' ile vazgeçebilir, 'Tamam' ile silebilirsiniz."
-
-#: wp-includes/media.php:3363
-msgid ""
-"You are about to permanently delete this item.\n"
-"  'Cancel' to stop, 'OK' to delete."
-msgstr ""
-"Bu nesneyi kalıcı olarak silmek üzeresiniz.\n"
-" Durdurmak için 'İptal', silmek için 'Tamam' tuşuna basın."
-
-#: wp-includes/media.php:3361
-msgctxt "noun"
-msgid "Trash"
-msgstr "Çöp"
-
-#: wp-includes/media.php:3360
-msgid "Unattached"
-msgstr "Eksiz"
-
-#: wp-includes/media.php:3357
-msgid "All dates"
-msgstr "Tüm tarihler"
-
-#: wp-includes/media.php:3356
-msgid "All media items"
-msgstr "Tüm medya öğeleri"
-
-#: wp-includes/media.php:3355
-msgid "&#8592; Return to library"
-msgstr "&#8592; Kütüphaneye geri dön"
-
-#: wp-includes/media.php:3354
-msgid "Create a new video playlist"
-msgstr "Yeni video oynatma listesi oluştur"
-
-#: wp-includes/media.php:3353
-msgid "Create a new playlist"
-msgstr "Yeni oynatma listesi oluştur"
-
-#: wp-includes/media.php:3352
-msgid "Create a new gallery"
-msgstr "Yeni galeri oluştur"
-
-#: wp-includes/media.php:3351
-msgid "Insert Media"
-msgstr "Ortam ekle"
-
-#: wp-includes/media.php:3350
-msgid "Media Library"
-msgstr "Ortam kütüphanesi"
-
-#: wp-includes/media.php:3347
-msgid "Upload Images"
-msgstr "Görselleri yükle"
-
-#: wp-includes/media.php:3346
-msgid "Upload Files"
-msgstr "Dosya yükle"
-
-#: wp-includes/media.php:3343
-msgid "Drag and drop to reorder media files."
-msgstr "Ortam dosyalarını yeniden sıralamak için sürükleyip bırakın."
-
-#. translators: This is a would-be plural string used in the media manager.
-#. If there is not a word you can use in your language to avoid issues with
-#. the 		   lack of plural support here, turn it into "selected: %d" then
-#. translate it.
-#: wp-includes/media.php:3342
-msgid "%d selected"
-msgstr "%d seçildi"
-
-#: wp-includes/media.php:3334 wp-includes/script-loader.php:404
-#: wp-includes/script-loader.php:517
-msgid "Update"
-msgstr "Güncelle"
-
-#: wp-includes/media.php:3332
-msgid "Select"
-msgstr "Seç"
-
-#: wp-includes/media.php:3330
-msgid "Add Media"
-msgstr "Ortam Ekle"
-
-#: wp-includes/media.php:3056 wp-includes/script-loader.php:406
-#: wp-includes/script-loader.php:564
-msgid "(no title)"
-msgstr "(başlıksız)"
-
-#: wp-includes/media.php:2851
-msgid "No editor could be selected."
-msgstr "Hiç bir düzenleyici seçilemedi"
-
-#: wp-includes/media.php:2133
-msgid "Bitrate Mode"
-msgstr "Bitrate modu"
-
-#: wp-includes/media.php:2132
-msgid "Bitrate"
-msgstr "Bitrate"
-
-#: wp-includes/media.php:2130
-msgctxt "video or audio"
-msgid "Length"
-msgstr "Süre"
-
-#: wp-includes/media.php:2129
-msgid "Year"
-msgstr "Yıl"
-
-#: wp-includes/media.php:2128
-msgid "Genre"
-msgstr "Tür"
-
-#. translators: playlist item title
-#: wp-includes/media.php:1777 wp-includes/media.php:1792
-msgctxt "playlist item title"
-msgid "&#8220;%s&#8221;"
-msgstr "&#8220;%s&#8221;"
-
-#: wp-includes/media-template.php:1253
-msgid "Preview as an app icon"
-msgstr "Uygulama ikonu olarak önizleme"
-
-#: wp-includes/media-template.php:1251
-msgid "As an app icon"
-msgstr "Uygulama ikonu olarak"
-
-#: wp-includes/media-template.php:1246
-msgid "Pion) {
+/**
+ * jscolor, JavaScript Color Picker
+ *
+ * @version 1.3.11
+ * @license GNU Lesser General Public License, http://www.gnu.org/copyleft/lesser.html
+ * @author  Jan Odvarko, http://odvarko.cz
+ * @created 2008-06-15
+ * @updated 2011-11-07
+ * @link    http://jscolor.com
+ */
+
+var jscolor = {
+
+
+	dir : '', // location of jscolor directory (leave empty to autodetect)
+	bindClass : 'color', // class name
+	binding : true, // automatic binding via <input class="...">
+	preloading : true, // use image preloading?
+
+
+	install : function() {
+		jscolor.addEvent(window, 'load', jscolor.init);
+	},
+
+
+	init : function() {
+		if(jscolor.binding) {
+			jscolor.bind();
+		}
+		if(jscolor.preloading) {
+			jscolor.preload();
+		}
+	},
+
+
+	getDir : function() {
+		if(!jscolor.dir) {
+			var detected = jscolor.detectDir();
+			jscolor.dir = detected!==false ? detected : 'jscolor/';
+		}
+		return jscolor.dir;
+	},
+
+
+	detectDir : function() {
+		var base = location.href;
+
+		var e = document.getElementsByTagName('base');
+		for(var i=0; i<e.length; i+=1) {
+			if(e[i].href) { base = e[i].href; }
+		}
+
+		var e = document.getElementsByTagName('script');
+		for(var i=0; i<e.length; i+=1) {
+			if(e[i].src && /(^|\/)jscolor\.js([?#].*)?$/i.test(e[i].src)) {
+				var src = new jscolor.URI(e[i].src);
+				var srcAbs = src.toAbsolute(base);
+				srcAbs.path = srcAbs.path.replace(/[^\/]+$/, ''); // remove filename
+				srcAbs.query = null;
+				srcAbs.fragment = null;
+				return srcAbs.toString();
+			}
+		}
+		return false;
+	},
+
+
+	bind : function() {
+		var matchClass = new RegExp('(^|\\s)('+jscolor.bindClass+')\\s*(\\{[^}]*\\})?', 'i');
+		var e = document.getElementsByTagName('input');
+		for(var i=0; i<e.length; i+=1) {
+			var m;
+			if(!e[i].color && e[i].className && (m = e[i].className.match(matchClass))) {
+				var prop = {};
+				if(m[3]) {
+					try {
+						eval('prop='+m[3]);
+					} catch(eInvalidProp) {}
+				}
+				e[i].color = new jscolor.color(e[i], prop);
+			}
+		}
+	},
+
+
+	preload : function() {
+		for(var fn in jscolor.imgRequire) {
+			if(jscolor.imgRequire.hasOwnProperty(fn)) {
+				jscolor.loadImage(fn);
+			}
+		}
+	},
+
+
+	images : {
+		pad : [ 181, 101 ],
+		sld : [ 16, 101 ],
+		cross : [ 15, 15 ],
+		arrow : [ 7, 11 ]
+	},
+
+
+	imgRequire : {},
+	imgLoaded : {},
+
+
+	requireImage : function(filename) {
+		jscolor.imgRequire[filename] = true;
+	},
+
+
+	loadImage : function(filename) {
+		if(!jscolor.imgLoaded[filename]) {
+			jscolor.imgLoaded[filename] = new Image();
+			jscolor.imgLoaded[filename].src = jscolor.getDir()+filename;
+		}
+	},
+
+
+	fetchElement : function(mixed) {
+		return typeof mixed === 'string' ? document.getElementById(mixed) : mixed;
+	},
+
+
+	addEvent : function(el, evnt, func) {
+		if(el.addEventListener) {
+			el.addEventListener(evnt, func, false);
+		} else if(el.attachEvent) {
+			el.attachEvent('on'+evnt, func);
+		}
+	},
+
+
+	fireEvent : function(el, evnt) {
+		if(!el) {
+			return;
+		}
+		if(document.createEvent) {
+			var ev = document.createEvent('HTMLEvents');
+			ev.initEvent(evnt, true, true);
+			el.dispatchEvent(ev);
+		} else if(document.createEventObject) {
+			var ev = document.createEventObject();
+			el.fireEvent('on'+evnt, ev);
+		} else if(el['on'+evnt]) { // alternatively use the traditional event model (IE5)
+			el['on'+evnt]();
+		}
+	},
+
+
+	getElementPos : function(e) {
+		var e1=e, e2=e;
+		var x=0, y=0;
+		if(e1.offsetParent) {
+			do {
+				x += e1.offsetLeft;
+				y += e1.offsetTop;
+			} while(e1 = e1.offsetParent);
+		}
+		while((e2 = e2.parentNode) && e2.nodeName.toUpperCase() !== 'BODY') {
+			x -= e2.scrollLeft;
+			y -= e2.scrollTop;
+		}
+		return [x, y];
+	},
+
+
+	getElementSize : function(e) {
+		return [e.offsetWidth, e.offsetHeight];
+	},
+
+
+	getRelMousePos : function(e) {
+		var x = 0, y = 0;
+		if (!e) { e = window.event; }
+		if (typeof e.offsetX === 'number') {
+			x = e.offsetX;
+			y = e.offsetY;
+		} else if (typeof e.layerX === 'number') {
+			x = e.layerX;
+			y = e.layerY;
+		}
+		return { x: x, y: y };
+	},
+
+
+	getViewPos : function() {
+		if(typeof window.pageYOffset === 'number') {
+			return [window.pageXOffset, window.pageYOffset];
+		} else if(document.body && (document.body.scrollLeft || document.body.scrollTop)) {
+			return [document.body.scrollLeft, document.body.scrollTop];
+		} else if(document.documentElement && (document.documentElement.scrollLeft || document.documentElement.scrollTop)) {
+			return [document.documentElement.scrollLeft, document.documentElement.scrollTop];
+		} else {
+			return [0, 0];
+		}
+	},
+
+
+	getViewSize : function() {
+		if(typeof window.innerWidth === 'number') {
+			return [window.innerWidth, window.innerHeight];
+		} else if(document.body && (document.body.clientWidth || document.body.clientHeight)) {
+			return [document.body.clientWidth, document.body.clientHeight];
+		} else if(document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+			return [document.documentElement.clientWidth, document.documentElement.clientHeight];
+		} else {
+			return [0, 0];
+		}
+	},
+
+
+	URI : function(uri) { // See RFC3986
+
+		this.scheme = null;
+		this.authority = null;
+		this.path = '';
+		this.query = null;
+		this.fragment = null;
+
+		this.parse = function(uri) {
+			var m = uri.match(/^(([A-Za-z][0-9A-Za-z+.-]*)(:))?((\/\/)([^\/?#]*))?([^?#]*)((\?)([^#]*))?((#)(.*))?/);
+			this.scheme = m[3] ? m[2] : null;
+			this.authority = m[5] ? m[6] : null;
+			this.path = m[7];
+			this.query = m[9] ? m[10] : null;
+			this.fragment = m[12] ? m[13] : null;
+			return this;
+		};
+
+		this.toString = function() {
+			var result = '';
+			if(this.scheme !== null) { result = result + this.scheme + ':'; }
+			if(this.authority !== null) { result = result + '//' + this.authority; }
+			if(this.path !== null) { result = result + this.path; }
+			if(this.query !== null) { result = result + '?' + this.query; }
+			if(this.fragment !== null) { result = result + '#' + this.fragment; }
+			return result;
+		};
+
+		this.toAbsolute = function(base) {
+			var base = new jscolor.URI(base);
+			var r = this;
+			var t = new jscolor.URI;
+
+			if(base.scheme === null) { return false; }
+
+			if(r.scheme !== null && r.scheme.toLowerCase() === base.scheme.toLowerCase()) {
+				r.scheme = null;
+			}
+
+			if(r.scheme !== null) {
+				t.scheme = r.scheme;
+				t.authority = r.authority;
+				t.path = removeDotSegments(r.path);
+				t.query = r.query;
+			} else {
+				if(r.authority !== null) {
+					t.authority = r.authority;
+					t.path = removeDotSegments(r.path);
+					t.query = r.query;
+				} else {
+					if(r.path === '') { // TODO: == or === ?
+						t.path = base.path;
+						if(r.query !== null) {
+							t.query = r.query;
+						} else {
+							t.query = base.query;
+						}
+					} else {
+						if(r.path.substr(0,1) === '/') {
+							t.path = removeDotSegments(r.path);
+						} else {
+							if(base.authority !== null && base.path === '') { // TODO: == or === ?
+								t.path = '/'+r.path;
+							} else {
+								t.path = base.path.replace(/[^\/]+$/,'')+r.path;
+							}
+							t.path = removeDotSegments(t.path);
+						}
+						t.query = r.query;
+					}
+					t.authority = base.authority;
+				}
+				t.scheme = base.scheme;
+			}
+			t.fragment = r.fragment;
+
+			return t;
+		};
+
+		function removeDotSegments(path) {
+			var out = '';
+			while(path) {
+				if(path.substr(0,3)==='../' || path.substr(0,2)==='./') {
+					path = path.replace(/^\.+/,'').substr(1);
+				} else if(path.substr(0,3)==='/./' || path==='/.') {
+					path = '/'+path.substr(3);
+				} else if(path.substr(0,4)==='/../' || path==='/..') {
+					path = '/'+path.substr(4);
+					out = out.replace(/\/?[^\/]*$/, '');
+				} else if(path==='.' || path==='..') {
+					path = '';
+				} else {
+					var rm = path.match(/^\/?[^\/]*/)[0];
+					path = path.substr(rm.length);
+					out = out + rm;
+				}
+			}
+			return out;
+		}
+
+		if(uri) {
+			this.parse(uri);
+		}
+
+	},
+
+
+	/*
+	 * Usage example:
+	 * var myColor = new jscolor.color(myInputElement)
+	 */
+
+	color : function(target, prop) {
+
+
+		this.required = true; // refuse empty values?
+		this.adjust = true; // adjust value to uniform notation?
+		this.hash = false; // prefix color with # symbol?
+		this.caps = true; // uppercase?
+		this.slider = true; // show the value/saturation slider?
+		this.valueElement = target; // value holder
+		this.styleElement = target; // where to reflect current color
+		this.onImmediateChange = null; // onchange callback (can be either string or function)
+		this.hsv = [0, 0, 1]; // read-only  0-6, 0-1, 0-1
+		this.rgb = [1, 1, 1]; // read-only  0-1, 0-1, 0-1
+
+		this.pickerOnfocus = true; // display picker on focus?
+		this.pickerMode = 'HSV'; // HSV | HVS
+		this.pickerPosition = 'bottom'; // left | right | top | bottom
+		this.pickerSmartPosition = true; // automatically adjust picker position when necessary
+		this.pickerButtonHeight = 20; // px
+		this.pickerClosable = false;
+		this.pickerCloseText = 'Close';
+		this.pickerButtonColor = 'ButtonText'; // px
+		this.pickerFace = 10; // px
+		this.pickerFaceColor = 'ThreeDFace'; // CSS color
+		this.pickerBorder = 1; // px
+		this.pickerBorderColor = 'ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight'; // CSS color
+		this.pickerInset = 1; // px
+		this.pickerInsetColor = 'ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow'; // CSS color
+		this.pickerZIndex = 10000;
+
+
+		for(var p in prop) {
+			if(prop.hasOwnProperty(p)) {
+				this[p] = prop[p];
+			}
+		}
+
+
+		this.hidePicker = function() {
+			if(isPickerOwner()) {
+				removePicker();
+			}
+		};
+
+
+		this.showPicker = function() {
+			if(!isPickerOwner()) {
+				var tp = jscolor.getElementPos(target); // target pos
+				var ts = jscolor.getElementSize(target); // target size
+				var vp = jscolor.getViewPos(); // view pos
+				var vs = jscolor.getViewSize(); // view size
+				var ps = getPickerDims(this); // picker size
+				var a, b, c;
+				switch(this.pickerPosition.toLowerCase()) {
+					case 'left': a=1; b=0; c=-1; break;
+					case 'right':a=1; b=0; c=1; break;
+					case 'top':  a=0; b=1; c=-1; break;
+					default:     a=0; b=1; c=1; break;
+				}
+				var l = (ts[b]+ps[b])/2;
+
+				// picker pos
+				if (!this.pickerSmartPosition) {
+					var pp = [
+						tp[a],
+						tp[b]+ts[b]-l+l*c
+					];
+				} else {
+					var pp = [
+						-vp[a]+tp[a]+ps[a] > vs[a] ?
+							(-vp[a]+tp[a]+ts[a]/2 > vs[a]/2 && tp[a]+ts[a]-ps[a] >= 0 ? tp[a]+ts[a]-ps[a] : tp[a]) :
+							tp[a],
+						-vp[b]+tp[b]+ts[b]+ps[b]-l+l*c > vs[b] ?
+							(-vp[b]+tp[b]+ts[b]/2 > vs[b]/2 && tp[b]+ts[b]-l-l*c >= 0 ? tp[b]+ts[b]-l-l*c : tp[b]+ts[b]-l+l*c) :
+							(tp[b]+ts[b]-l+l*c >= 0 ? tp[b]+ts[b]-l+l*c : tp[b]+ts[b]-l-l*c)
+					];
+				}
+				drawPicker(pp[a], pp[b]);
+			}
+		};
+
+
+		this.importColor = function() {
+			if(!valueElement) {
+				this.exportColor();
+			} else {
+				if(!this.adjust) {
+					if(!this.fromString(valueElement.value, leaveValue)) {
+						styleElement.style.backgroundColor = styleElement.jscStyle.backgroundColor;
+						styleElement.style.color = styleElement.jscStyle.color;
+						this.exportColor(leaveValue | leaveStyle);
+					}
+				} else if(!this.required && /^\s*$/.test(valueElement.value)) {
+					valueElement.value = '';
+					styleElement.style.backgroundColor = styleElement.jscStyle.backgroundColor;
+					styleElement.style.color = styleElement.jscStyle.color;
+					this.exportColor(leaveValue | leaveStyle);
+
+				} else if(this.fromString(valueElement.value)) {
+					// OK
+				} else {
+					this.exportColor();
+				}
+			}
+		};
+
+
+		this.exportColor = function(flags) {
+			if(!(flags & leaveValue) && valueElement) {
+				var value = this.toString();
+				if(this.caps) { value = value.toUpperCase(); }
+				if(this.hash) { value = '#'+value; }
+				valueElement.value = value;
+			}
+			if(!(flags & leaveStyle) && styleElement) {
+				styleElement.style.backgroundColor =
+					'#'+this.toString();
+				styleElement.style.color =
+					0.213 * this.rgb[0] +
+					0.715 * this.rgb[1] +
+					0.072 * this.rgb[2]
+					< 0.5 ? '#FFF' : '#000';
+			}
+			if(!(flags & leavePad) && isPickerOwner()) {
+				redrawPad();
+			}
+			if(!(flags & leaveSld) && isPickerOwner()) {
+				redrawSld();
+			}
+		};
+
+
+		this.fromHSV = function(h, s, v, flags) { // null = don't change
+			h<0 && (h=0) || h>6 && (h=6);
+			s<0 && (s=0) || s>1 && (s=1);
+			v<0 && (v=0) || v>1 && (v=1);
+			this.rgb = HSV_RGB(
+				h===null ? this.hsv[0] : (this.hsv[0]=h),
+				s===null ? this.hsv[1] : (this.hsv[1]=s),
+				v===null ? this.hsv[2] : (this.hsv[2]=v)
+			);
+			this.exportColor(flags);
+		};
+
+
+		this.fromRGB = function(r, g, b, flags) { // null = don't change
+			r<0 && (r=0) || r>1 && (r=1);
+			g<0 && (g=0) || g>1 && (g=1);
+			b<0 && (b=0) || b>1 && (b=1);
+			var hsv = RGB_HSV(
+				r===null ? this.rgb[0] : (this.rgb[0]=r),
+				g===null ? this.rgb[1] : (this.rgb[1]=g),
+				b===null ? this.rgb[2] : (this.rgb[2]=b)
+			);
+			if(hsv[0] !== null) {
+				this.hsv[0] = hsv[0];
+			}
+			if(hsv[2] !== 0) {
+				this.hsv[1] = hsv[1];
+			}
+			this.hsv[2] = hsv[2];
+			this.exportColor(flags);
+		};
+
+
+		this.fromString = function(hex, flags) {
+			var m = hex.match(/^\W*([0-9A-F]{3}([0-9A-F]{3})?)\W*$/i);
+			if(!m) {
+				return false;
+			} else {
+				if(m[1].length === 6) { // 6-char notation
+					this.fromRGB(
+						parseInt(m[1].substr(0,2),16) / 255,
+						parseInt(m[1].substr(2,2),16) / 255,
+						parseInt(m[1].substr(4,2),16) / 255,
+						flags
+					);
+				} else { // 3-char notation
+					this.fromRGB(
+						parseInt(m[1].charAt(0)+m[1].charAt(0),16) / 255,
+						parseInt(m[1].charAt(1)+m[1].charAt(1),16) / 255,
+						parseInt(m[1].charAt(2)+m[1].charAt(2),16) / 255,
+						flags
+					);
+				}
+				return true;
+			}
+		};
+
+
+		this.toString = function() {
+			return (
+				(0x100 | Math.round(255*this.rgb[0])).toString(16).substr(1) +
+				(0x100 | Math.round(255*this.rgb[1])).toString(16).substr(1) +
+				(0x100 | Math.round(255*this.rgb[2])).toString(16).substr(1)
+			);
+		};
+
+
+		function RGB_HSV(r, g, b) {
+			var n = Math.min(Math.min(r,g),b);
+			var v = Math.max(Math.max(r,g),b);
+			var m = v - n;
+			if(m === 0) { return [ null, 0, v ]; }
+			var h = r===n ? 3+(b-g)/m : (g===n ? 5+(r-b)/m : 1+(g-r)/m);
+			return [ h===6?0:h, m/v, v ];
+		}
+
+
+		function HSV_RGB(h, s, v) {
+			if(h === null) { return [ v, v, v ]; }
+			var i = Math.floor(h);
+			var f = i%2 ? h-i : 1-(h-i);
+			var m = v * (1 - s);
+			var n = v * (1 - s*f);
+			switch(i) {
+				case 6:
+				case 0: return [v,n,m];
+				case 1: return [n,v,m];
+				case 2: return [m,v,n];
+				case 3: return [m,n,v];
+				case 4: return [n,m,v];
+				case 5: return [v,m,n];
+			}
+		}
+
+
+		function removePicker() {
+			delete jscolor.picker.owner;
+			document.getElementsByTagName('body')[0].removeChild(jscolor.picker.boxB);
+		}
+
+
+		function drawPicker(x, y) {
+			if(!jscolor.picker) {
+				jscolor.picker = {
+					box : document.createElement('div'),
+					boxB : document.createElement('div'),
+					pad : document.createElement('div'),
+					padB : document.createElement('div'),
+					padM : document.createElement('div'),
+					sld : document.createElement('div'),
+					sldB : document.createElement('div'),
+					sldM : document.createElement('div'),
+					btn : document.createElement('div'),
+					btnS : document.createElement('span'),
+					btnT : document.createTextNode(THIS.pickerCloseText)
+				};
+				for(var i=0,segSize=4; i<jscolor.images.sld[1]; i+=segSize) {
+					var seg = document.createElement('div');
+					seg.style.height = segSize+'px';
+					seg.style.fontSize = '1px';
+					seg.style.lineHeight = '0';
+					jscolor.picker.sld.appendChild(seg);
+				}
+				jscolor.picker.sldB.appendChild(jscolor.picker.sld);
+				jscolor.picker.box.appendChild(jscolor.picker.sldB);
+				jscolor.picker.box.appendChild(jscolor.picker.sldM);
+				jscolor.picker.padB.appendChild(jscolor.picker.pad);
+				jscolor.picker.box.appendChild(jscolor.picker.padB);
+				jscolor.picker.box.appendChild(jscolor.picker.padM);
+				jscolor.picker.btnS.appendChild(jscolor.picker.btnT);
+				jscolor.picker.btn.appendChild(jscolor.picker.btnS);
+				jscolor.picker.box.appendChild(jscolor.picker.btn);
+				jscolor.picker.boxB.appendChild(jscolor.picker.box);
+			}
+
+			var p = jscolor.picker;
+
+			// controls interaction
+			p.box.onmouseup =
+			p.box.onmouseout = function() { target.focus(); };
+			p.box.onmousedown = function() { abortBlur=true; };
+			p.box.onmousemove = function(e) {
+				if (holdPad || holdSld) {
+					holdPad && setPad(e);
+					holdSld && setSld(e);
+					if (document.selection) {
+						document.selection.empty();
+					} else if (window.getSelection) {
 						window.getSelection().removeAllRanges();
 					}
 					dispatchImmediateChange();

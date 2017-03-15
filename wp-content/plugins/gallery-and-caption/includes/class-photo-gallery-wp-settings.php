@@ -43,42 +43,42 @@ class Photo_Gallery_WP_Settings extends WPDEV_Settings_API
             'gallery_content_pop_up' => array(
                 'title' => __('Gallery / Content Pop Up','photo-gallery-wp'),
                 'disabled' => true,
-                'disabled_link' => 'http://huge-it.com/wordpress-photo-gallery/'
+                'disabled_link' => 'https://goo.gl/LwtCFf'
             ),
             'content_slider' => array (
                 'title' => __( 'Content Slider', 'photo-gallery-wp' ),
                 'disabled' => true,
-                'disabled_link' => 'http://huge-it.com/wordpress-photo-gallery/'
+                'disabled_link' => 'https://goo.gl/LwtCFf'
             ),
             'lightbox_gallery' => array (
                 'title' => __( 'Lightbox-Gallery', 'photo-gallery-wp' ),
                 'disabled' => true,
-                'disabled_link' => 'http://huge-it.com/wordpress-photo-gallery/'
+                'disabled_link' => 'https://goo.gl/LwtCFf'
             ),
             'slider' => array (
                 'title' => __( 'Slider', 'photo-gallery-wp' ),
                 'disabled' => true,
-                'disabled_link' => 'http://huge-it.com/wordpress-photo-gallery/'
+                'disabled_link' => 'https://goo.gl/LwtCFf'
             ),
             'thumbnails' => array (
                 'title' => __( 'Thumbnails', 'photo-gallery-wp' ),
                 'disabled' => true,
-                'disabled_link' => 'http://huge-it.com/wordpress-photo-gallery/'
+                'disabled_link' => 'https://goo.gl/LwtCFf'
             ),
             'justified' => array (
                 'title' => __( 'Justified', 'photo-gallery-wp' ),
                 'disabled' => true,
-                'disabled_link' => 'http://huge-it.com/wordpress-photo-gallery/'
+                'disabled_link' => 'https://goo.gl/LwtCFf'
             ),
             'masonry' => array(
                 'title' => __( 'Masonry', 'photo-gallery-wp' ),
                 'disabled' => true,
-                'disabled_link' => 'http://huge-it.com/wordpress-photo-gallery/'
+                'disabled_link' => 'https://goo.gl/LwtCFf'
             ),
             'mosaic' => array(
                 'title' => __( 'Mosaic', 'photo-gallery-wp' ),
                 'disabled' => true,
-                'disabled_link' => 'http://huge-it.com/wordpress-photo-gallery/'
+                'disabled_link' => 'https://goo.gl/LwtCFf'
             )
         );
     }
@@ -217,6 +217,10 @@ class Photo_Gallery_WP_Settings extends WPDEV_Settings_API
                 'panel' => 'justified',
                 'title' => __( 'Ratings Styles', 'photo-gallery-wp' ),
             ),
+            'slider_options' => array (
+                'panel' => 'slider',
+                'title' => __( 'Slider options', 'photo-gallery-wp' ),
+            ),
             'slider_arrows' => array (
                 'panel' => 'slider',
                 'title' => __( 'Arrows', 'photo-gallery-wp' ),
@@ -321,6 +325,9 @@ class Photo_Gallery_WP_Settings extends WPDEV_Settings_API
     private function init_controls_slider()
     {
         $this->slider_show_arrows = $this->get_option("slider_show_arrows", 2);
+        $this->slider_options_border = $this->get_option("slider_options_border", 0);
+        $this->slider_options_border_color = $this->get_option("slider_options_border_color", 'CCCCCC');
+        $this->slider_options_border_radius = $this->get_option("slider_options_border_radius", 0);
         $this->slider_arrows_buttons = $this->get_option("slider_arrows_buttons", 'arrows-0.png');
         $this->slider_show_thumbnails = $this->get_option("slider_show_thumbnails", 2);
         $this->slider_thumbnails_position = $this->get_option("slider_thumbnails_position", 'show_all');
@@ -364,6 +371,24 @@ class Photo_Gallery_WP_Settings extends WPDEV_Settings_API
                 'default' => $this->slider_show_arrows,
                 'label' => __('Show Arrows', 'photo-gallery-wp'),
                 'help' => __('slider_show_arrows', 'photo-gallery-wp')
+            ),
+            'slider_options_border' => array(
+                'section' => 'slider_options',
+                'type' => 'number',
+                'default' => $this->slider_options_border,
+                'label' => __('Slider Border', 'photo-gallery-wp'),
+            ),
+            'slider_options_border_color' => array(
+                'section' => 'slider_options',
+                'type' => 'color',
+                'default' => $this->slider_options_border_color,
+                'label' => __('Slider Border Color', 'photo-gallery-wp'),
+            ),
+            'slider_options_border_radius' => array(
+                'section' => 'slider_options',
+                'type' => 'number',
+                'default' => $this->slider_options_border_radius,
+                'label' => __('Slider Border Radius', 'photo-gallery-wp'),
             ),
             'slider_arrows_buttons' => array(
                 'section' => 'slider_arrows',
@@ -1532,6 +1557,9 @@ class Photo_Gallery_WP_Settings extends WPDEV_Settings_API
     private function init_content_slider()
     {
         $this->view5_main_image_width = $this->get_option("view5_main_image_width", 275);
+        $this->view5_main_image_border_width_in_px = $this->get_option("view5_main_image_border_width_in_px", 0);
+        $this->view5_main_image_border_color = $this->get_option("view5_main_image_border_color", 'eeeeee');
+        $this->view5_main_image_border_radius = $this->get_option("view5_main_image_border_radius", 0);
         $this->view5_slider_background_color = $this->get_option("view5_slider_background_color", 'F9F9F9');
         $this->view5_icons_style = $this->get_option("view5_icons_style", 'dark');
         $this->view5_show_separator_lines = $this->get_option("view5_show_separator_lines", 'yes');
@@ -1562,26 +1590,41 @@ class Photo_Gallery_WP_Settings extends WPDEV_Settings_API
     private function controls_content_slider()
     {
         return array (
+            'view5_main_image_border_width_in_px' => array(
+                'section' => 'content_slider_container',
+                'type' => 'number',
+                'default' => $this->view5_main_image_border_width_in_px,
+                'label' => __('Border Width in px', 'photo-gallery-wp'),
+            ),
+            'view5_main_image_border_color' => array(
+                'section' => 'content_slider_container',
+                'type' => 'color',
+                'default' => $this->view5_main_image_border_color,
+                'label' => __('Border Color', 'photo-gallery-wp'),
+            ),
+            'view5_main_image_border_radius' => array(
+                'section' => 'content_slider_container',
+                'type' => 'number',
+                'default' => $this->view5_main_image_border_radius,
+                'label' => __('Border Radius', 'photo-gallery-wp'),
+            ),
             'view5_main_image_width' => array(
                 'section' => 'content_slider_container',
                 'type' => 'number',
                 'default' => $this->view5_main_image_width,
                 'label' => __('Main Image Width in px', 'photo-gallery-wp'),
-                'help' => __('view5_main_image_width', 'photo-gallery-wp')
             ),
             'view5_slider_background_color' => array(
                 'section' => 'content_slider_container',
                 'type' => 'color',
                 'default' => $this->view5_slider_background_color,
                 'label' => __('Slider Background Color', 'photo-gallery-wp'),
-                'help' => __('view5_slider_background_color', 'photo-gallery-wp')
             ),
             'view5_icons_style' => array(
                 'section' => 'content_slider_container',
                 'type' => 'select',
                 'default' => $this->view5_icons_style,
                 'label' => __('Arrow Icons Style', 'photo-gallery-wp'),
-                'help' => __('view5_icons_style', 'photo-gallery-wp'),
                 'choices' => array(
                     'dark' => 'Dark',
                     'light' => 'Light'
@@ -1592,112 +1635,96 @@ class Photo_Gallery_WP_Settings extends WPDEV_Settings_API
                 'type' => 'checkbox',
                 'default' => $this->view5_show_separator_lines,
                 'label' => __('Show Separator Lines', 'photo-gallery-wp'),
-                'help' => __('view5_show_separator_lines', 'photo-gallery-wp')
             ),
             'view5_show_linkbutton' => array(
                 'section' => 'content_slider_link_button',
                 'type' => 'checkbox',
                 'default' => $this->view5_show_linkbutton,
                 'label' => __('Show Link Button', 'photo-gallery-wp'),
-                'help' => __('view5_show_linkbutton', 'photo-gallery-wp')
             ),
             'view5_linkbutton_text' => array(
                 'section' => 'content_slider_link_button',
                 'type' => 'text',
                 'default' => $this->view5_linkbutton_text,
                 'label' => __('Link Button Text', 'photo-gallery-wp'),
-                'help' => __('view5_linkbutton_text', 'photo-gallery-wp')
             ),
             'view5_linkbutton_font_size' => array(
                 'section' => 'content_slider_link_button',
                 'type' => 'number',
                 'default' => $this->view5_linkbutton_font_size,
                 'label' => __('Link Button Font Size in px', 'photo-gallery-wp'),
-                'help' => __('view5_linkbutton_font_size', 'photo-gallery-wp')
             ),
             'view5_linkbutton_color' => array(
                 'section' => 'content_slider_link_button',
                 'type' => 'color',
                 'default' => $this->view5_linkbutton_color,
                 'label' => __('Link Button Font Color', 'photo-gallery-wp'),
-                'help' => __('view5_linkbutton_color', 'photo-gallery-wp')
             ),
             'view5_linkbutton_font_hover_color' => array(
                 'section' => 'content_slider_link_button',
                 'type' => 'color',
                 'default' => $this->view5_linkbutton_font_hover_color,
                 'label' => __('Link Button Font Hover Color', 'photo-gallery-wp'),
-                'help' => __('view5_linkbutton_font_hover_color', 'photo-gallery-wp')
             ),
             'view5_linkbutton_background_color' => array(
                 'section' => 'content_slider_link_button',
                 'type' => 'color',
                 'default' => $this->view5_linkbutton_background_color,
                 'label' => __('Link Button Background Color', 'photo-gallery-wp'),
-                'help' => __('view5_linkbutton_background_color', 'photo-gallery-wp')
             ),
             'view5_linkbutton_background_hover_color' => array(
                 'section' => 'content_slider_link_button',
                 'type' => 'color',
                 'default' => $this->view5_linkbutton_background_hover_color,
                 'label' => __('Link Button Background Hover Color', 'photo-gallery-wp'),
-                'help' => __('view5_linkbutton_background_hover_color', 'photo-gallery-wp')
             ),
             'view5_title_font_size' => array(
                 'section' => 'content_slider_title',
                 'type' => 'number',
                 'default' => $this->view5_title_font_size,
                 'label' => __('Title Font Size in px', 'photo-gallery-wp'),
-                'help' => __('view5_title_font_size', 'photo-gallery-wp')
             ),
             'view5_title_font_color' => array(
                 'section' => 'content_slider_title',
                 'type' => 'color',
                 'default' => $this->view5_title_font_color,
                 'label' => __('Title Font Color', 'photo-gallery-wp'),
-                'help' => __('view5_title_font_color', 'photo-gallery-wp')
             ),
             'view5_show_description' => array(
                 'section' => 'content_slider_description',
                 'type' => 'checkbox',
                 'default' => $this->view5_show_description,
                 'label' => __('Show Description', 'photo-gallery-wp'),
-                'help' => __('view5_show_description', 'photo-gallery-wp')
             ),
             'view5_description_font_size' => array(
                 'section' => 'content_slider_description',
                 'type' => 'number',
                 'default' => $this->view5_description_font_size,
                 'label' => __('Description Font Size in px', 'photo-gallery-wp'),
-                'help' => __('view5_description_font_size', 'photo-gallery-wp')
             ),
             'view5_description_color' => array(
                 'section' => 'content_slider_description',
                 'type' => 'color',
                 'default' => $this->view5_description_color,
                 'label' => __('Description Font Color', 'photo-gallery-wp'),
-                'help' => __('view5_description_color', 'photo-gallery-wp')
             ),
             'contentsl_rating_count' => array(
                 'section' => 'content_slider_rating_styles',
                 'type' => 'checkbox',
                 'default' => $this->contentsl_rating_count,
                 'label' => __('Show Ratings Count', 'photo-gallery-wp'),
-                'help' => __('contentsl_rating_count', 'photo-gallery-wp')
             ),
             'contentsl_likedislike_bg' => array(
                 'section' => 'content_slider_rating_styles',
                 'type' => 'color',
                 'default' => $this->contentsl_likedislike_bg,
                 'label' => __('Ratings Background Color', 'photo-gallery-wp'),
-                'help' => __('contentsl_likedislike_bg', 'photo-gallery-wp')
             ),
             'contentsl_likedislike_bg_trans' => array(
                 'section' => 'content_slider_rating_styles',
                 'type' => 'simple_slider',
                 'default' => $this->contentsl_likedislike_bg_trans,
                 'label' => __('Ratings Background Color Opacity', 'photo-gallery-wp'),
-                'help' => __('contentsl_likedislike_bg_trans', 'photo-gallery-wp'),
                 'choices' => array(0,10,20,30,40,50,60,70,80,90,100)
             ),
             'contentsl_likedislike_font_color' => array(
@@ -1705,42 +1732,36 @@ class Photo_Gallery_WP_Settings extends WPDEV_Settings_API
                 'type' => 'color',
                 'default' => $this->contentsl_likedislike_font_color,
                 'label' => __('Ratings Font Color', 'photo-gallery-wp'),
-                'help' => __('contentsl_likedislike_font_color', 'photo-gallery-wp')
             ),
             'contentsl_active_font_color' => array(
                 'section' => 'content_slider_rating_styles',
                 'type' => 'color',
                 'default' => $this->contentsl_active_font_color,
                 'label' => __('Ratings Rated Font Color', 'photo-gallery-wp'),
-                'help' => __('contentsl_active_font_color', 'photo-gallery-wp')
             ),
             'contentsl_likedislike_thumb_color' => array(
                 'section' => 'content_slider_rating_styles',
                 'type' => 'color',
                 'default' => $this->contentsl_likedislike_thumb_color,
                 'label' => __('Like/Dislike Icon Color', 'photo-gallery-wp'),
-                'help' => __('contentsl_likedislike_thumb_color', 'photo-gallery-wp')
             ),
             'contentsl_likedislike_thumb_active_color' => array(
                 'section' => 'content_slider_rating_styles',
                 'type' => 'color',
                 'default' => $this->contentsl_likedislike_thumb_active_color,
                 'label' => __('Like/Dislike Rated Icon Color', 'photo-gallery-wp'),
-                'help' => __('contentsl_likedislike_thumb_active_color', 'photo-gallery-wp')
             ),
             'contentsl_heart_likedislike_thumb_color' => array(
                 'section' => 'content_slider_rating_styles',
                 'type' => 'color',
                 'default' => $this->contentsl_heart_likedislike_thumb_color,
                 'label' => __('Heart Icon Color', 'photo-gallery-wp'),
-                'help' => __('contentsl_heart_likedislike_thumb_color', 'photo-gallery-wp')
             ),
             'contentsl_heart_likedislike_thumb_active_color' => array(
                 'section' => 'content_slider_rating_styles',
                 'type' => 'color',
                 'default' => $this->contentsl_heart_likedislike_thumb_active_color,
                 'label' => __('Heart Rated Icon Color', 'photo-gallery-wp'),
-                'help' => __('contentsl_heart_likedislike_thumb_active_color', 'photo-gallery-wp')
             ),
         );
     }
@@ -1848,6 +1869,8 @@ class Photo_Gallery_WP_Settings extends WPDEV_Settings_API
         $this->mosaic_image_max_width_in_px = $this->get_option("mosaic_image_max_width_in_px", '150');
         $this->mosaic_image_column_count = $this->get_option("mosaic_image_column_count", '5');
         $this->mosaic_image_border_width_in_px = $this->get_option("mosaic_image_border_width_in_px", '0');
+        $this->mosaic_image_margin_bottom_in_px = $this->get_option("mosaic_image_margin_bottom_in_px", '0');
+        $this->mosaic_image_margin_right_in_px = $this->get_option("mosaic_image_margin_right_in_px", '0');
         $this->mosaic_image_border_color = $this->get_option("mosaic_image_border_color", 'eeeeee');
         $this->mosaic_image_border_radius = $this->get_option("mosaic_image_border_radius", '0');
         $this->mosaic_title_show_title = $this->get_option("mosaic_title_show_title", 'yes');
@@ -1889,6 +1912,18 @@ class Photo_Gallery_WP_Settings extends WPDEV_Settings_API
                 'default' => $this->mosaic_image_column_count,
                 'label' => __('Column count', 'photo-gallery-wp'),
                 'html_class' => ( $this->mosaic_show_content_by !== 'count' ? array('hidden') : array() )
+            ),
+            'mosaic_image_margin_bottom_in_px' => array(
+                'section' => 'mosaic_image_styles',
+                'type' => 'number',
+                'default' => $this->mosaic_image_margin_bottom_in_px,
+                'label' => __('Image Margin Bottom in px', 'photo-gallery-wp')
+            ),
+            'mosaic_image_margin_right_in_px' => array(
+                'section' => 'mosaic_image_styles',
+                'type' => 'number',
+                'default' => $this->mosaic_image_margin_right_in_px,
+                'label' => __('Image Margin Right in px', 'photo-gallery-wp')
             ),
             'mosaic_image_border_width_in_px' => array(
                 'section' => 'mosaic_image_styles',

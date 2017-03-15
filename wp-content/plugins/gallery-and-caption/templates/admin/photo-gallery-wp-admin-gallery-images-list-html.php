@@ -549,6 +549,42 @@ if ( isset( $_GET["addslide"] ) ) {
 														echo 'selected';
 													} ?>
 														value="clip_jump_in"><?php echo __( 'Clip & Jump In', 'photo-gallery-wp' ); ?></option>
+													<option <?php if ( $row->gallery_list_effects_s == 'bounce_down' ) {
+														echo 'selected';
+													} ?>
+														value="bounce_down"><?php echo __( 'Bounce Down', 'photo-gallery-wp' ); ?></option>
+													<option <?php if ( $row->gallery_list_effects_s == 'parabola_zigzag_in' ) {
+														echo 'selected';
+													} ?>
+														value="parabola_zigzag_in"><?php echo __( 'Parabola Zigzag In', 'photo-gallery-wp' ); ?></option>
+													<option <?php if ( $row->gallery_list_effects_s == 'jump_in_rectangle_cross' ) {
+														echo 'selected';
+													} ?>
+														value="jump_in_rectangle_cross"><?php echo __( 'Jump In Rectangle Cross', 'photo-gallery-wp' ); ?></option>
+													<option <?php if ( $row->gallery_list_effects_s == 'wave_in_cross' ) {
+														echo 'selected';
+													} ?>
+														value="wave_in_cross"><?php echo __( 'Wave in Cross', 'photo-gallery-wp' ); ?></option>
+													<option <?php if ( $row->gallery_list_effects_s == 'wave_out_cross' ) {
+														echo 'selected';
+													} ?>
+														value="wave_out_cross"><?php echo __( 'Wave Out Cross', 'photo-gallery-wp' ); ?></option>
+													<option <?php if ( $row->gallery_list_effects_s == 'vertical_chess_stripe' ) {
+														echo 'selected';
+													} ?>
+														value="vertical_chess_stripe"><?php echo __( 'Vertical Chess Stripe', 'photo-gallery-wp' ); ?></option>
+													<option <?php if ( $row->gallery_list_effects_s == 'shift_tb' ) {
+														echo 'selected';
+													} ?>
+														value="shift_tb"><?php echo __( 'Shift TB', 'photo-gallery-wp' ); ?></option>
+													<option <?php if ( $row->gallery_list_effects_s == 'shift_lr' ) {
+														echo 'selected';
+													} ?>
+														value="shift_lr"><?php echo __( 'Shift LR', 'photo-gallery-wp' ); ?></option>
+													<option <?php if ( $row->gallery_list_effects_s == 'fly_twins' ) {
+														echo 'selected';
+													} ?>
+														value="fly_twins"><?php echo __( 'Fly Twins', 'photo-gallery-wp' ); ?></option>
 												</select>
 											</li>
 											<li>
