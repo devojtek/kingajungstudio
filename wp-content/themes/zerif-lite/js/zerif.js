@@ -827,3 +827,8 @@ jQuery( document ).ready( function() {
       });
     }
 })(jQuery,window);
+
+
+jQuery( document ).ready( function(){
+    jQuery('[data-toggle="tooltip"]').tooltip(); 
+});

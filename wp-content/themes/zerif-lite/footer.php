@@ -42,7 +42,7 @@
 		$zerif_email = get_theme_mod('zerif_email','<a href="mailto:contact@site.com">contact@site.com</a>');
 		$zerif_email_icon = get_theme_mod('zerif_email_icon',get_template_directory_uri().'/images/envelope4-green.png');
 		
-		$zerif_phone = get_theme_mod('zerif_phone','<a href="tel:0 332 548 954">0 332 548 954</a>');
+		$zerif_phone = get_theme_mod('zerif_phone','<a data-toggle="tooltip" title="0 332 548 954" href="#">0 332 548 954</a>');
 		$zerif_phone_icon = get_theme_mod('zerif_phone_icon',get_template_directory_uri().'/images/telephone65-blue.png');
 
 		
@@ -62,6 +62,7 @@
 		// open link in a new tab when checkbox "accessibility" is not ticked
 		$attribut_new_tab = (isset($zerif_accessibility) && ($zerif_accessibility != 1) ? ' target="_blank"' : '' );
 
+		$my_phone_icon = '<a data-toggle="tooltip" title="0 332 548 954" href="tel:0 332 548 954"><i class="fa fa-phone" style="font-size:48px; margin-top: 12px;"></i></a>';
 		$my_insta_icon = '<i class="fa fa-instagram" style="font-size:48px; margin-top: 12px;"></i>';
 		$my_homebook_icon = '<img src="\wp-content\themes\zerif-lite\images\homebook_med.png" style="height:54px; width:42px; margin-top: 12px;" />';
 		$my_facebook_icon = '<i class="fa fa-facebook" style="font-size:48px;margin-top: 12px;"></i>';
@@ -142,10 +143,7 @@
 		
 		if( !empty($zerif_phone) ):
 			echo '<div class="'.$footer_class.' company-details">';
-				echo '<div class="icon-top blue-text">';
-					if( !empty($zerif_phone_icon) ) echo '<img src="'.esc_url($zerif_phone_icon).'" alt="" />';
-				echo '</div>';
-				echo $zerif_phone;
+				echo $my_phone_icon;
 			echo '</div>';
 		endif;
 
