@@ -45,18 +45,34 @@
 		$zerif_phone = get_theme_mod('zerif_phone','<a href="tel:0 332 548 954">0 332 548 954</a>');
 		$zerif_phone_icon = get_theme_mod('zerif_phone_icon',get_template_directory_uri().'/images/telephone65-blue.png');
 
+		
+
 		$zerif_socials_facebook = get_theme_mod('zerif_socials_facebook','#');
 		$zerif_socials_twitter = get_theme_mod('zerif_socials_twitter','#');
 		$zerif_socials_linkedin = get_theme_mod('zerif_socials_linkedin','#');
 		$zerif_socials_behance = get_theme_mod('zerif_socials_behance','#');
 		$zerif_socials_dribbble = get_theme_mod('zerif_socials_dribbble','#');
 
-		$zerif_socials_homebook = get_theme_mod('zerif_socials_homebook','http://www.homebook.pl/');
-		$zerif_socials_instagram = get_theme_mod('zerif_socials_instagram','https://www.instagram.com/');
+		$zerif_socials_homebook = get_theme_mod('zerif_socials_homebook','http://www.homebook.pl/profil/kj-studio');
+		$zerif_socials_instagram = get_theme_mod('zerif_socials_instagram','https://www.instagram.com/kinga_jung_studio/');
 		
 		$zerif_accessibility = get_theme_mod('zerif_accessibility');
 		$zerif_copyright = get_theme_mod('zerif_copyright');
 
+		// open link in a new tab when checkbox "accessibility" is not ticked
+		$attribut_new_tab = (isset($zerif_accessibility) && ($zerif_accessibility != 1) ? ' target="_blank"' : '' );
+
+		$my_insta_icon = '<i class="fa fa-instagram" style="font-size:48px; margin-top: 12px;"></i>';
+		$my_homebook_icon = '<img src="\wp-content\themes\zerif-lite\images\homebook_med.png" style="height:54px; width:42px; margin-top: 12px;" />';
+		$my_facebook_icon = '<i class="fa fa-facebook" style="font-size:48px;margin-top: 12px;"></i>';
+
+		$my_scocials_facebook = '<a'.$attribut_new_tab.' href="'.$zerif_socials_facebook.'">'.$my_facebook_icon.'</a>';
+		$my_scocials_insta = '<a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_instagram).'">'.$my_insta_icon.'</a>';
+		$my_scocials_homebook = '<a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_homebook).'">'.$my_homebook_icon.'</a>';
+
+		
+		
+		
 		if(!empty($zerif_address) || !empty($zerif_address_icon)):
 			$footer_sections++;
 		endif;
@@ -68,8 +84,19 @@
 		if(!empty($zerif_phone) || !empty($zerif_phone_icon)):
 			$footer_sections++;
 		endif;
-		if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || !empty($zerif_socials_instagram) || !empty($zerif_socials_homebook) ||
-		!empty($zerif_copyright)):
+		if(!empty($my_scocials_facebook)):
+			$footer_sections++;
+		endif;
+		if(!empty($my_scocials_insta)):
+			$footer_sections++;
+		endif;
+		if(!empty($my_scocials_homebook)):
+			$footer_sections++;
+		endif;
+
+		// !empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || !empty($zerif_socials_instagram) || !empty($zerif_socials_homebook) ||
+		// 		!empty($zerif_copyright)
+		if(false):
 			$footer_sections++;
 		endif;
 		
@@ -81,8 +108,10 @@
 			$footer_class = 'col-md-4';
 		elseif( $footer_sections == 4 ):
 			$footer_class = 'col-md-3';
+		elseif( $footer_sections == 6 ):
+			$footer_class = 'col-md-2 col-sm-4 col-xs-6';
 		else:
-			$footer_class = 'col-md-3';
+			$footer_class = 'col-md-1';
 		endif;
 		
 		/* COMPANY ADDRESS */
@@ -119,12 +148,31 @@
 				echo $zerif_phone;
 			echo '</div>';
 		endif;
+
+		/* facebook */
+		if( !empty($my_scocials_facebook) ):
+			echo '<div class="'.$footer_class.' company-details">';
+				echo $my_scocials_facebook;
+			echo '</div>';
+		endif;
 		
-		// open link in a new tab when checkbox "accessibility" is not ticked
-		$attribut_new_tab = (isset($zerif_accessibility) && ($zerif_accessibility != 1) ? ' target="_blank"' : '' );
+		/* insta */
+		if( !empty($my_scocials_insta) ):
+			echo '<div class="'.$footer_class.' company-details">';
+				echo $my_scocials_insta;
+			echo '</div>';
+		endif;
+
+		/* homebook */
+		if( !empty($my_scocials_homebook) ):
+			echo '<div class="'.$footer_class.' company-details">';
+				echo $my_scocials_homebook;
+			echo '</div>';
+		endif;
 		
-		if( !empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || !empty($zerif_socials_instagram) || !empty($zerif_socials_homebook) ||
-		!empty($zerif_copyright)):
+		//  !empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || !empty($zerif_socials_instagram) || !empty($zerif_socials_homebook) ||
+		// !empty($zerif_copyright)
+		if(false):
 		
 					echo '<div class="'.$footer_class.' copyright">';
 					if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || !empty($zerif_socials_instagram) || !empty($zerif_socials_homebook)):
@@ -158,7 +206,7 @@
 						endif;
 						/* homebook */
 						if( !empty($zerif_socials_homebook) ):
-							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_homebook).'"><img src="\wp-content\themes\zerif-lite\images\homebook_small1.png" style="height:34px; width:34px;" /></a></li>';
+							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_homebook).'"><img src="\wp-content\themes\zerif-lite\images\homebook_small2.png" style="height:44px; width:34px;" /></a></li>';
 						endif;
 						echo '</ul>';
 					endif;	

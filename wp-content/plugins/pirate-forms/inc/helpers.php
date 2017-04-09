@@ -1,8 +1,8 @@
 <?php
+/**
 
-/**************************************************/
-/**************** Show errors *********************/
-/**************************************************/
+ * ************* Show errors *********************/
+
 
 if ( ! function_exists( 'pirate_forms_display_errors' ) ) {
 
@@ -10,13 +10,13 @@ if ( ! function_exists( 'pirate_forms_display_errors' ) ) {
 
 		$output = '';
 
-		if( !empty($errs) ):
+		if ( ! empty( $errs ) ) :
 
-			$output .= '<div class="pirate_forms_error_box">';
-				$output .= '<p>'.__( 'Sorry, an error occured.','pirate-forms' ).'</p>';
+			$output .= '<div class="col-sm-12 col-lg-12 pirate_forms_error_box">';
+				$output .= '<p>' . __( 'Sorry, an error occured.','pirate-forms' ) . '</p>';
 			$output .= '</div>';
 			foreach ( $errs as $err ) :
-				$output .= '<div class="pirate_forms_error_box">';
+				$output .= '<div class="col-sm-12 col-lg-12 pirate_forms_error_box">';
 					$output .= "<p>$err</p>";
 				$output .= '</div>';
 			endforeach;
@@ -27,9 +27,10 @@ if ( ! function_exists( 'pirate_forms_display_errors' ) ) {
 	}
 }
 
-/***************************************************************************/
-/******** Get blacklist IPs and emails from the Discussion settings ********/
-/***************************************************************************/
+/**
+
+****** Get blacklist IPs and emails from the Discussion settings */
+
 
 if ( ! function_exists( 'pirate_forms_get_blacklist' ) ) {
 
